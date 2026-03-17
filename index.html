@@ -16,15 +16,11 @@ margin:0;
 text-align:center;
 }
 
-/* container */
-
 .container{
 max-width:700px;
 margin:auto;
 padding:40px 20px;
 }
-
-/* logo */
 
 .logo{
 width:120px;
@@ -33,8 +29,6 @@ border-radius:50%;
 object-fit:cover;
 margin-bottom:20px;
 }
-
-/* heading */
 
 h1{
 font-size:36px;
@@ -53,8 +47,6 @@ font-size:18px;
 margin-bottom:25px;
 }
 
-/* bullet points */
-
 .points{
 text-align:left;
 max-width:450px;
@@ -64,8 +56,6 @@ line-height:1.7;
 margin-bottom:30px;
 }
 
-/* timer */
-
 .timer{
 color:red;
 font-size:22px;
@@ -73,7 +63,7 @@ font-weight:bold;
 margin-bottom:25px;
 }
 
-/* CTA */
+/* CTA BUTTON */
 
 .cta{
 display:inline-block;
@@ -86,47 +76,31 @@ text-decoration:none;
 font-weight:600;
 box-shadow:0 6px 15px rgba(0,0,0,0.2);
 margin-bottom:25px;
-animation: pulse 1.6s infinite;
+animation:pulse 1.6s infinite;
 }
 
 .cta:hover{
 background:#164da3;
 }
 
-/* BUTTON ANIMATION */
-
 @keyframes pulse{
 
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.08);
-}
-
-100%{
-transform:scale(1);
-}
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
 
 }
-
-/* install text */
 
 .install-note{
 font-size:16px;
 margin-bottom:25px;
 }
 
-/* disclaimer */
-
 .disclaimer{
 font-size:13px;
 color:#555;
 margin-top:10px;
 }
-
-/* footer ads */
 
 .footer{
 margin-top:40px;
@@ -147,21 +121,11 @@ vertical-align:middle;
 margin-right:5px;
 }
 
-/* responsive */
-
 @media(max-width:600px){
 
-h1{
-font-size:28px;
-}
-
-.subtitle{
-font-size:17px;
-}
-
-.points{
-font-size:16px;
-}
+h1{font-size:28px;}
+.subtitle{font-size:17px;}
+.points{font-size:16px;}
 
 .cta{
 font-size:18px;
@@ -180,7 +144,6 @@ padding:16px 35px;
 <div class="container">
 
 <img class="logo" src="https://simbaonline.org/wp-content/uploads/2026/03/ChatGPT-Image-Mar-16-2026-05_37_49-PM.jpg">
-
 
 <h1>Star Kalyan</h1>
 
@@ -210,10 +173,6 @@ Join thousands of players checking daily results instantly 🚀
 
 
 <a class="cta" href="https://star-kalyan5t6.vercel.app/assets/apkk/star-kalyan.apk" download>
-
-📲 Install Star Kalyan App
-
-</a>
 
 📲 Install Star Kalyan App
 
@@ -257,11 +216,9 @@ Install the app to get instant Kalyan Matka updates and market results.
 </div>
 
 
-
 <script>
 
 let time = 300;
-
 let countdown = document.getElementById("countdown");
 
 setInterval(function(){
@@ -281,34 +238,23 @@ time--;
 
 </script>
 
-<!-- Meta Pixel Code -->
+
+<!-- Meta Pixel -->
+
 <script>
-
 !function(f,b,e,v,n,t,s)
-
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-
 n.queue=[];t=b.createElement(e);t.async=!0;
-
 t.src=v;s=b.getElementsByTagName(e)[0];
-
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '920634500866812');
-
-fbq('track', 'PageView');
+fbq('init','920634500866812');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
 
-src="https://www.facebook.com/tr?id=920634500866812&ev=PageView&noscript=1"
-
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 </html>
